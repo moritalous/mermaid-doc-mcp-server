@@ -37,7 +37,7 @@ To add this MCP server to your Amazon Q or Claude, add the following to your MCP
 List all available Mermaid diagram names in the documentation.
 
 ```python
-list_diagrams() -> list:
+def list_diagrams() -> list:
 ```
 
 ### get_diagram_doc
@@ -45,5 +45,5 @@ list_diagrams() -> list:
 Retrieve the documentation content for a specific Mermaid diagram.
 
 ```python
-get_diagram_doc(diagram_name: str) -> str:
+def get_diagram_doc(diagram_name: str) -> str:
 ```
