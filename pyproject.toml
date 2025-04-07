@@ -1,0 +1,22 @@
+[project]
+name = "mermaid-doc-mcp-server"
+version = "0.1.0"
+description = "A Model Context Protocol (MCP) server that provides access to Mermaid diagram documentation."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.6.0",
+]
+
+[project.scripts]
+"mermaid-doc-mcp-server" = "mermaid_doc.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["mermaid_doc"]
